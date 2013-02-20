@@ -1,5 +1,6 @@
 source :rubygems
 gem 'rails', '3.2.0'
+gem 'haml'
 
 gem 'sqlite3'
 
@@ -10,8 +11,10 @@ group :assets do
 end
 
 group :test do
+  gem 'database_cleaner'
   gem 'rspec-rails'
   gem 'cucumber-rails'
+  gem 'factory_girl'
 end
 
 gem 'jquery-rails'
